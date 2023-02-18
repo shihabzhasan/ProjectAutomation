@@ -11,10 +11,10 @@ public class Daya {
 		
 System.setProperty("webdriver.chrome.driver", "C:\\Users\\shihab.hasan\\Downloads\\Compressed\\New folder (4)\\chromedriver.exe");
 		
-WebDriver driver = new ChromeDriver();
+WebDriver driver = new ChromeDriver();//chrome initate 
 
 
-driver.get("http://192.168.20.127/UltimusFinSolutionTest/UFS.Web/");
+driver.get("http://192.168.20.127/UltimusFinSolutionTest/UFS.Web/");//BU page
 System.out.println(driver.getTitle());
 
 System.out.println(driver.getCurrentUrl());
@@ -25,7 +25,7 @@ driver.findElement(By.id("PasswordString")).sendKeys("1");
 driver.findElement(By.id("btnlogin")).click();
 
 driver.findElement(By.id("imgLogOut")).click();
-driver.findElement(By.xpath("span[normalize-space()='Yes']")).click();
+driver.findElement(By.xpath("span[normalize-space()='Yes']")).click();//find by xpath
 
 
 		
